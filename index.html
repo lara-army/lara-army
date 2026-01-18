@@ -244,18 +244,28 @@
         }
 
         #footer-logo {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            align-items: end;
+        }
+
+        #footer-logo>div {
+            line-height: 0.85;
+        }
+
+        #footer-logo-text {
             white-space: nowrap;
             margin-top: 96px;
             font-size: 26vw;
-            line-height: 0.85;
-            text-align: center;
             font-weight: 400;
             letter-spacing: -0.05em;
             user-select: none;
             pointer-events: none;
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
+        }
+
+        #footer-logo-flag {
+            width: 26vw;
         }
     </style>
 </head>
@@ -375,7 +385,15 @@
     </footer>
 
     <div id="footer-logo">
-        Laravel🇮🇩
+        <div id="footer-logo-text">
+            Laravel
+        </div>
+        <div id="footer-logo-flag">
+            <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-id" viewBox="0 0 640 480">
+                <path fill="#e70011" d="M0 0h640v240H0Z" />
+                <path fill="#fff" d="M0 240h640v240H0Z" />
+            </svg>
+        </div>
     </div>
 
 </body>
