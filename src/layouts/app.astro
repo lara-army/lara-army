@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
 
 const SITE_URL = "https://lara-army.github.io";
 const PAGE_TITLE =
@@ -61,6 +63,7 @@ const OG_IMAGE = "/og-image.jpg";
     <meta name="twitter:image:alt" content="Laravel Indonesia Community" />
 
     <script
+      is:inline
       type="application/ld+json"
       set:html={JSON.stringify({
         "@context": "https://schema.org",
@@ -82,6 +85,8 @@ const OG_IMAGE = "/og-image.jpg";
     />
   </head>
   <body>
+    <Header />
     <slot />
+    <Footer />
   </body>
 </html>

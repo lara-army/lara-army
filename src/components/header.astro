@@ -1,0 +1,55 @@
+---
+import logo from "../assets/logo.svg";
+import IconArrowUpRight from "~icons/tabler/arrow-up-right";
+---
+
+<header
+  class="fixed z-50 left-1/2 bg-background/90 backdrop-blur-sm -translate-x-1/2 top-4"
+>
+  <div
+    class="h-16 gap-12 relative border border-zinc-300 flex items-center pl-2 pr-6"
+  >
+    <div
+      class="absolute border-l border-t h-[30%] aspect-square transition-all -left-px -top-px group-hover:-left-1 group-hover:-top-1 border-border-dark"
+    >
+    </div>
+    <div
+      class="absolute border-r border-t h-[30%] aspect-square transition-all -right-px -top-px group-hover:-right-1 group-hover:-top-1 border-border-dark"
+    >
+    </div>
+    <div
+      class="absolute border-l border-b h-[30%] aspect-square transition-all -left-px -bottom-px group-hover:-left-1 group-hover:-bottom-1 border-border-dark"
+    >
+    </div>
+    <div
+      class="absolute border-r border-b h-[30%] aspect-square transition-all -right-px -bottom-px group-hover:-right-1 group-hover:-bottom-1 border-border-dark"
+    >
+    </div>
+    <a href="/" class="flex items-center text-lg font-semibold">
+      <img class="size-10" src={logo.src} /> Laravel Indonesia
+    </a>
+    <div class="flex items-center gap-1">
+      <a class="hover:underline text-sm text-foreground-body" href="#acara">Acara</a>
+      <span>・</span>
+      <a class="hover:underline text-sm text-foreground-body" href="#pengurus"
+        >Pengurus</a
+      >
+      <span>・</span>
+      <a
+        class="hover:underline text-sm inline-flex gap-1 text-foreground-body"
+        href="/"
+      >
+        Discord
+        <IconArrowUpRight />
+      </a>
+      <span>・</span>
+      <a
+        class="hover:underline text-sm inline-flex gap-1 text-foreground-body"
+        href="/"
+      >
+        Github
+        <IconArrowUpRight />
+      </a>
+    </div>
+  </div>
+</header>
