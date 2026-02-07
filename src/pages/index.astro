@@ -6,6 +6,12 @@ import IconBrandGithub from "~icons/tabler/brand-github";
 import IconBrandX from "~icons/tabler/brand-x";
 ---
 
+<script>
+  import fitty from "fitty";
+
+  fitty("#laravel-text");
+</script>
+
 <Layout>
   <header
     class="fixed z-50 left-1/2 bg-white/90 backdrop-blur-sm -translate-x-1/2 top-4"
@@ -461,7 +467,7 @@ import IconBrandX from "~icons/tabler/brand-x";
       </svg>
     </div>
   </div>
-  <section class="border-y flex border-zinc-800 relative" id="acara">
+  <section class="border-y flex border-zinc-800 relative" id="pengurus">
     <div class="inner border-x border-zinc-800 relative flex flex-col gap-6">
       <div class="absolute inset-0">
         <svg width="100%" height="100%" aria-hidden="true"
@@ -576,6 +582,36 @@ import IconBrandX from "~icons/tabler/brand-x";
       </svg>
     </div>
   </div>
+  <footer class="border-y flex border-zinc-800 relative overflow-hidden">
+    <div class="inner border-x border-zinc-800 relative flex flex-col gap-6">
+      <div class="absolute inset-0">
+        <svg width="100%" height="100%" aria-hidden="true"
+          ><defs
+            ><pattern
+              viewBox="0 0 10 10"
+              width="10"
+              height="10"
+              patternUnits="userSpaceOnUse"
+              id="_r12R_6_"
+              ><circle
+                cx="5"
+                cy="5"
+                r="1"
+                fill="currentColor"
+                class="fill-zinc-500/50"></circle></pattern
+            ></defs
+          ><rect width="100%" height="100%" fill="url(#_r12R_6_)"></rect></svg
+        >
+      </div>
+      <span
+        id="laravel-text"
+        class="font-bold relative block text-[30rem] leading-[0.71] bg-linear-to-b bg-clip-text text-transparent from-red-500 from-50% to-white to-0%"
+        style="-webkit-text-stroke:1px var(--color-zinc-800);"
+      >
+        LARAVEL
+      </span>
+    </div>
+  </footer>
 </Layout>
 
 <style>
